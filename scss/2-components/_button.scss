@@ -1,0 +1,14 @@
+.btn-free {
+  padding: 10px 30px;
+  background-color: #06D6A0;
+  border: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:hover {
+    background-color: #06D6A0;
+  }
+}

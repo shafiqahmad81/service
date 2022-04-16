@@ -1,0 +1,17 @@
+.banar-bottom {
+  background-image: url(/images/banar-bottom.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #54646F;
+  height: 300px;
+  margin-bottom: 100px;
+  position: relative;
+  background-blend-mode: overlay;
+
+  .title {
+    .btn-free {
+      padding: 15px 40px;
+      margin-top: 20px;
+    }
+  }
+}

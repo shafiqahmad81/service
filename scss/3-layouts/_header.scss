@@ -1,0 +1,42 @@
+.main-header {
+  margin: 0 auto;
+  max-width: 100%;
+  margin-top: 17px;
+  margin-bottom: 17px;
+
+  .logo {
+    margin: 0;
+  }
+
+  .main-menu {
+    margin: 0 auto;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        padding: 10px 15px;
+
+        a {
+          color: #888888;
+          text-decoration: none;
+          line-height: 24px;
+          font-size: $small-text-size;
+        }
+
+        &:hover a {
+          color: #06D6A0;
+        }
+      }
+    }
+  }
+
+  .active {
+    color: #06D6A0 !important;
+  }
+
+
+}
