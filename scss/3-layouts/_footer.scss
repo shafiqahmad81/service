@@ -1,10 +1,17 @@
 .footer-top {
+  .footer-wrap {
+    display: flex;
 
+    .footer-item {
+      width: 29.7029702970297%;
+    }
+  }
 
   h4 {
     font-size: 20px;
     line-height: 45px;
     color: $gray;
+    margin-bottom: 24px;
   }
 
   a {
@@ -13,5 +20,48 @@
     line-height: 45px;
     text-decoration: none;
     display: block;
+  }
+
+  .sign-up {
+    width: calc(1320px - 900px);
+    margin-left: auto;
+
+    .social-wrap {
+      h4 {
+        line-height: 26px;
+      }
+
+      .social {
+        display: flex;
+        align-items: center;
+        flex-flow: row wrap;
+
+        a {
+          margin-right: 40px;
+
+          span {
+            margin-left: 5px;
+          }
+
+          &:hover {
+            color: #06D6A0;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  background-color: #F7F7F7;
+  padding: 15px 0;
+  text-align: center;
+
+  p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 26px;
+    color: $light;
   }
 }
