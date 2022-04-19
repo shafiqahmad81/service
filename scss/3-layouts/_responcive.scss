@@ -3,7 +3,15 @@
   ##Screen = 1281px to higher resolution desktops
 */
 
-@media (min-width: 1281px) {}
+@media (max-width: 1280px) {
+  .banar-bottom {
+    .title {
+      h2 {
+        font-size: 32px !important;
+      }
+    }
+  }
+}
 
 /* 
   ##Device = Laptops, Desktops
@@ -22,69 +30,36 @@
 */
 
 @media (max-width: 1024px) {
-
   .main-header .main-menu ul li {
-    padding: 0 10px;
+    padding: 0 9px !important;
   }
 
-  .btn-free {
-    width: 180px;
-  }
-
-  .main-header .main-menu ul li a {
-    font-size: 13px;
-  }
-
-  .banar-bottom {
-
-    .title {
-      h2 {
-        font-size: 25px;
-        margin-bottom: 16px;
-
-      }
-
-      p {
-        font-size: 18px;
-      }
-
-      .btn-free {
-        margin-top: 5px;
-      }
-    }
-
-  }
-
-  form {
-    margin: 30px 0;
-  }
-
-  .content-item {
-    h4 {
-      font-size: 16px;
-    }
-
-    p,
-    a {
-      font-size: 13px;
-    }
-  }
-
-  .footer-top h4,
-  .footer-top .h4 {
-    font-size: 20px;
-    line-height: 35px;
-  }
-
-  .footer-top a {
-    font-size: 13px;
-    line-height: 35px;
-  }
 
   .footer-top .sign-up .social-wrap .social a {
     margin-right: 20px;
   }
 
+  .content-wrap {
+    .content-item {
+      width: calc(50% - 30px) !important;
+    }
+
+    h4 {
+      font-size: 18px;
+    }
+  }
+
+  .banar-bottom {
+    .title {
+      h2 {
+        font-size: 24px !important;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
 }
 
 /* 
@@ -105,27 +80,50 @@
 
 @media (max-width: 768px) {
   .main-header {
-    .main-menu {
-      display: none;
-
-      ul li {
-        padding: 0px 10px;
-      }
-    }
-
     .btn-free {
       margin-left: auto;
     }
-  }
 
-  .content-item {
-    width: calc(50% - 30px);
-  }
-
-  footer-top {
-    .footer-wrap {
-      display: inherit !important;
+    .main-menu {
+      display: none !important;
     }
+  }
+
+  .banar-section {
+    height: 250px;
+
+    .title {
+      h2 {
+        font-size: 30px;
+        line-height: 20px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .banar-bottom {
+    .title {
+      h2 {
+        margin-bottom: 15px !important;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      .btn-free {
+        margin-top: 0 !important;
+      }
+
+    }
+  }
+
+  .sign-up {
+    margin: 50px 0;
   }
 }
 
@@ -134,8 +132,78 @@
   ##Screen = B/w 320px to 479px
 */
 
+@media (max-width: 576px) {
+
+  .banar-section {
+    .title {
+      h2 {
+        font-size: 26px;
+        line-height: 20px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .footer-top {
+    .footer-item {
+      margin-bottom: 50px !important;
+
+      h4 {
+        line-height: 10px !important;
+      }
+
+      a {
+        line-height: 22px !important;
+      }
+    }
+  }
+
+
+
+}
+
 @media (max-width: 480px) {
+  .banar-section {
+    .title {
+      h2 {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 15px;
+      }
 
-  /* CSS */
+      p {
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+  }
 
+  .content-wrap {
+    .content-item {
+      width: 100% !important;
+    }
+  }
+
+  .banar-bottom {
+    .title {
+      h2 {
+        font-size: 22px !important;
+        margin-bottom: 15px !important;
+      }
+
+      p {
+        font-size: 13px;
+        line-height: 20px;
+      }
+
+      .btn-free {
+        margin-top: 0 !important;
+        padding: 7px 40px;
+      }
+
+    }
+  }
 }

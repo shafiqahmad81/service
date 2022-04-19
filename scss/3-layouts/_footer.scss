@@ -1,9 +1,13 @@
 .footer-top {
+  width: 1170px;
+  max-width: 100%;
+  margin: 0 auto;
+
   .footer-wrap {
     display: flex;
 
     .footer-item {
-      width: 29.7029702970297%;
+      width: 24.5014245014245%;
     }
   }
 
@@ -23,7 +27,7 @@
   }
 
   .sign-up {
-    width: calc(1320px - 900px);
+
     margin-left: auto;
 
     .social-wrap {
