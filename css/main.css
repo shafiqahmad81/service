@@ -10914,6 +10914,7 @@ form input[type=email]:focus {
 body,
 html {
   font-family: "Khula", sans-serif;
+  min-width: 320px;
 }
 
 .main-header {
