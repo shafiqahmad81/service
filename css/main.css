@@ -10761,14 +10761,14 @@ textarea.form-control-lg {
 }
 
 .banar-section {
-  background-image: url("/images/banar.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: #073B4C;
-  height: 400px;
   position: relative;
-  background-blend-mode: overlay;
+}
+.banar-section figure img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  background-color: #073B4C;
+  opacity: 0.9;
 }
 
 .title {
@@ -10791,15 +10791,14 @@ textarea.form-control-lg {
 }
 
 .banar-bottom {
-  background-image: url(/images/banar-bottom.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   background-color: #54646F;
-  height: 300px;
   margin-bottom: 100px;
   position: relative;
-  background-blend-mode: overlay;
+}
+.banar-bottom figure img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 .banar-bottom .title .btn-free {
   padding: 15px 40px;
@@ -11029,7 +11028,13 @@ html {
 */
 @media (max-width: 1280px) {
   .banar-bottom .title h2, .banar-bottom .title .h2 {
-    font-size: 32px !important;
+    font-size: 30px !important;
+    margin-bottom: 10px !important;
+  }
+  .banar-bottom .title p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 0;
   }
 }
 /* 
@@ -11060,10 +11065,16 @@ html {
   }
 
   .banar-bottom .title h2, .banar-bottom .title .h2 {
-    font-size: 24px !important;
+    font-size: 20px !important;
+    line-height: 22px;
   }
   .banar-bottom .title p {
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .banar-bottom .title .btn-free {
+    padding: 10px 40px;
+    margin-top: 10px;
   }
 }
 /* 
@@ -11094,11 +11105,13 @@ html {
     height: 250px;
   }
   .banar-section .title h2, .banar-section .title .h2 {
-    font-size: 30px;
-    line-height: 20px;
+    font-size: 26px;
+    line-height: 14px;
+    margin-bottom: 20px;
   }
   .banar-section .title p {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .content-section {
@@ -11108,15 +11121,21 @@ html {
   .banar-bottom {
     margin-bottom: 50px;
   }
-  .banar-bottom .title h2, .banar-bottom .title .h2 {
-    margin-bottom: 15px !important;
+  .banar-bottom figure img {
+    height: 180px;
   }
-  .banar-bottom .title p {
-    font-size: 16px;
+  .banar-bottom .title h2, .banar-bottom .title .h2 {
+    margin-bottom: 10px !important;
+    font-size: 18px !important;
     line-height: 20px;
   }
+  .banar-bottom .title p {
+    font-size: 14px;
+    line-height: 16px;
+  }
   .banar-bottom .title .btn-free {
-    margin-top: 0 !important;
+    margin-top: 10px !important;
+    padding: 10px 0;
   }
 
   .sign-up {
@@ -11128,12 +11147,27 @@ html {
   ##Screen = B/w 320px to 479px
 */
 @media (max-width: 576px) {
+  .banar-section .title {
+    top: 32%;
+  }
   .banar-section .title h2, .banar-section .title .h2 {
-    font-size: 26px;
-    line-height: 20px;
+    font-size: 22px;
+    line-height: 15px;
+    margin-bottom: 16px;
   }
   .banar-section .title p {
-    font-size: 18px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .banar-bottom .title h2, .banar-bottom .title .h2 {
+    font-size: 16px !important;
+    line-height: 18px !important;
+    margin-bottom: 10px !important;
+  }
+  .banar-bottom .title p {
+    font-size: 14px !important;
+    line-height: 16px !important;
   }
 
   .footer-top .footer-item {
@@ -11162,33 +11196,38 @@ html {
   }
 }
 @media (max-width: 480px) {
+  .banar-section .title {
+    top: 28%;
+  }
   .banar-section .title h2, .banar-section .title .h2 {
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
   }
   .banar-section .title p {
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .banar-bottom .title h2, .banar-bottom .title .h2 {
+    font-size: 15px !important;
+    line-height: 15px !important;
+    margin-bottom: 10px !important;
+  }
+  .banar-bottom .title p {
+    font-size: 12px !important;
+    line-height: 13px !important;
+  }
+  .banar-bottom .title .btn-free {
+    margin-top: 0 !important;
+    padding: 7px 0;
+    margin-top: 5px !important;
   }
 
   .content-wrap .content-item {
     width: 100% !important;
     min-height: 300px;
     padding: 20px;
-  }
-
-  .banar-bottom .title h2, .banar-bottom .title .h2 {
-    font-size: 22px !important;
-    margin-bottom: 15px !important;
-  }
-  .banar-bottom .title p {
-    font-size: 13px;
-    line-height: 20px;
-  }
-  .banar-bottom .title .btn-free {
-    margin-top: 0 !important;
-    padding: 7px 40px;
   }
 }
 
