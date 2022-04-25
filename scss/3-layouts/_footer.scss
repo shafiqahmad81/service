@@ -1,71 +1,74 @@
-.footer-top {
-  width: 1170px;
-  max-width: 100%;
-  margin: 0 auto;
+.footer-section {
+  .footer-content {
+    width: 1170px;
+    max-width: 100%;
+    margin: 0 auto;
 
-  .footer-wrap {
-    display: flex;
+    .footer-wrap {
+      display: flex;
 
-    .footer-item {
-      width: 24.5014245014245%;
-    }
-  }
-
-  h4 {
-    font-size: 20px;
-    line-height: 45px;
-    color: $gray;
-    margin-bottom: 24px;
-  }
-
-  a {
-    color: $light;
-    font-size: $small-text-size;
-    line-height: 45px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .sign-up {
-
-    margin-left: auto;
-
-    .social-wrap {
-      h4 {
-        line-height: 26px;
+      .footer-item {
+        width: 24.5014245014245%;
       }
+    }
 
-      .social {
-        display: flex;
-        align-items: center;
-        flex-flow: row wrap;
+    h4 {
+      font-size: 20px;
+      line-height: 45px;
+      color: $gray;
+      margin-bottom: 24px;
+    }
 
-        a {
-          margin-right: 40px;
+    a {
+      color: $light;
+      font-size: $small-text-size;
+      line-height: 45px;
+      text-decoration: none;
+      display: block;
+    }
 
-          span {
-            margin-left: 5px;
-          }
+    .sign-up {
 
-          &:hover {
-            color: #06D6A0;
-          }
+      margin-left: auto;
+
+      .social-wrap {
+        h4 {
+          line-height: 26px;
         }
 
+        .social {
+          display: flex;
+          align-items: center;
+          flex-flow: row wrap;
+
+          a {
+            margin-right: 40px;
+
+            span {
+              margin-left: 5px;
+            }
+
+            &:hover {
+              color: #06D6A0;
+            }
+          }
+
+        }
       }
     }
   }
-}
 
-.footer-bottom {
-  background-color: #F7F7F7;
-  padding: 15px 0;
-  text-align: center;
+  .copy-right {
+    background-color: #F7F7F7;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 80px;
 
-  p {
-    margin: 0;
-    font-size: 15px;
-    line-height: 26px;
-    color: $light;
+    p {
+      margin: 0;
+      font-size: 15px;
+      line-height: 26px;
+      color: $light;
+    }
   }
 }

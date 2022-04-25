@@ -4,7 +4,7 @@
 */
 
 @media (max-width: 1280px) {
-  .banar-bottom {
+  .banar-section {
     .title {
       h2 {
         font-size: 30px !important;
@@ -37,17 +37,15 @@
 */
 
 @media (max-width: 1024px) {
-  .main-header .main-menu ul li {
-    padding: 0 9px !important;
-  }
+
 
 
   .footer-top .sign-up .social-wrap .social a {
     margin-right: 20px;
   }
 
-  .content-wrap {
-    .content-item {
+  .service-wrap {
+    .service-item {
       width: calc(50% - 30px) !important;
     }
 
@@ -56,7 +54,7 @@
     }
   }
 
-  .banar-bottom {
+  .banar-section {
     .title {
       h2 {
         font-size: 20px !important;
@@ -81,9 +79,42 @@
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (max-width: 991px) {
 
-  /* CSS */
+  .menu-bar {
+    display: block;
+    margin-right: 10px;
+  }
+
+  .main-menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: -9999999999%;
+    top: 67px;
+    background-color: #fff;
+    z-index: 9;
+    height: 100vh;
+    text-align: center;
+
+    ul {
+      padding: 20px !important;
+
+      li {
+        display: block !important;
+        padding: 10px 0 !important;
+      }
+    }
+  }
+
+  .show {
+    left: 0;
+  }
+
+  .footer-section .footer-content .sign-up .social-wrap .social a {
+    margin-right: 20px;
+  }
+
 
 }
 
@@ -92,27 +123,9 @@
   ##Screen = B/w 481px to 767px
 */
 
-@media (max-width: 768px) {
-  .main-header {
-    .btn-free {
-      margin-left: auto;
-      display: none;
-    }
+@media (max-width: 767px) {
 
-    .main-menu {
-      display: none !important;
-    }
-
-
-
-    .button {
-      display: block;
-      margin-left: auto;
-    }
-  }
-
-  .banar-section {
-    height: 250px;
+  .hero-section {
 
     .title {
       h2 {
@@ -128,11 +141,11 @@
     }
   }
 
-  .content-section {
+  .service-section {
     margin: 50px auto;
   }
 
-  .banar-bottom {
+  .banar-section {
     margin-bottom: 50px;
 
     figure {
@@ -165,6 +178,14 @@
   .sign-up {
     margin: 50px 0;
   }
+
+  .footer-section .footer-content .sign-up .social-wrap .social {
+    justify-content: center !important;
+  }
+
+  .copy-right {
+    margin-top: 0 !important;
+  }
 }
 
 /* 
@@ -174,9 +195,8 @@
 
 @media (max-width: 576px) {
 
-  .banar-section {
+  .hero-section {
     .title {
-      top: 32%;
 
       h2 {
         font-size: 22px;
@@ -191,7 +211,7 @@
     }
   }
 
-  .banar-bottom {
+  .banar-section {
     .title {
 
       h2 {
@@ -245,9 +265,8 @@
 }
 
 @media (max-width: 480px) {
-  .banar-section {
+  .hero-section {
     .title {
-      top: 28%;
 
       h2 {
         font-size: 16px;
@@ -262,7 +281,7 @@
     }
   }
 
-  .banar-bottom {
+  .banar-section {
     .title {
 
       h2 {
@@ -284,12 +303,22 @@
     }
   }
 
-  .content-wrap {
-    .content-item {
+  .section-wrap {
+    .section-item {
       width: 100% !important;
       min-height: 300px;
       padding: 20px;
     }
   }
 
+  .footer-section {
+    .footer-content a {
+      font-size: 13px !important;
+      line-height: 35px !important;
+    }
+
+    .copy-right p {
+      font-size: 13px !important;
+    }
+  }
 }

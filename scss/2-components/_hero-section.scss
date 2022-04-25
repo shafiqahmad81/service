@@ -1,0 +1,48 @@
+.hero-section {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(7, 59, 76, 12);
+    opacity: 0.38;
+    z-index: 1;
+  }
+
+  figure {
+    img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      background-color: #073B4C;
+      opacity: 0.9;
+    }
+  }
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 8;
+
+  h2 {
+    font-size: 36px;
+    color: #fff;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 22px;
+    line-height: 26px;
+    color: #fff;
+
+  }
+}

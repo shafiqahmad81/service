@@ -1,35 +1,32 @@
 .banar-section {
+  margin-bottom: 100px;
   position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(7, 59, 76, 12);
+    opacity: 0.62;
+
+  }
 
   figure {
     img {
       width: 100%;
       max-width: 100%;
       height: auto;
-      background-color: #073B4C;
-      opacity: 0.9;
     }
   }
-}
 
-.title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-
-  h2 {
-    font-size: 36px;
-    color: #fff;
-    line-height: 26px;
-    margin-bottom: 30px;
-  }
-
-  p {
-    font-size: 22px;
-    line-height: 26px;
-    color: #fff;
+  .title {
+    .btn-free {
+      padding: 15px 40px;
+      margin-top: 20px;
+    }
 
   }
 }
