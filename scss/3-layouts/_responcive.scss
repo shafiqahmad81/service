@@ -211,6 +211,12 @@
     }
   }
 
+  .service-wrap {
+    .service-item {
+      padding: 35px 20px 0 !important;
+    }
+  }
+
   .banar-section {
     .title {
 
@@ -227,8 +233,8 @@
     }
   }
 
-  .footer-top {
-    .footer-item {
+  .footer-section {
+    .footer-content {
       margin-bottom: 50px !important;
 
       h4 {
@@ -303,11 +309,11 @@
     }
   }
 
-  .section-wrap {
-    .section-item {
+  .service-wrap {
+    .service-item {
       width: 100% !important;
-      min-height: 300px;
-      padding: 20px;
+      min-height: 300px !important;
+      padding: 20px !important;
     }
   }
 
